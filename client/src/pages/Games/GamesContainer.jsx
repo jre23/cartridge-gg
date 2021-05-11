@@ -20,16 +20,22 @@ const GamesContainer = (props) => {
   };
   return (
     <>
-      <div className="container">
-        <div className="row align-items-center">
-          <Link to="/rps" style={styles.backgroundColor1} className="col">
-            RPS
-          </Link>
-          <div style={styles.backgroundColor2} className="col">
-            One of three columns
+      <div className="container px-3">
+        <div className="row align-items-center gx-3">
+          <div className="col-12 col-md-6">
+            <div className="p-2 mb-3" style={styles.backgroundColor1}>
+              <Link to="/rps">RPS</Link>
+            </div>
           </div>
-          <div style={styles.backgroundColor3} className="col">
-            One of three columns
+          <div className="col-12 col-md-6">
+            <div className="p-2 mb-3" style={styles.backgroundColor2}>
+              <Link to="/rps">RPS</Link>
+            </div>
+          </div>
+          <div className="col-12 col-md-6">
+            <div className="p-2 mb-3" style={styles.backgroundColor3}>
+              <Link to="/rps">RPS</Link>
+            </div>
           </div>
         </div>
       </div>

@@ -2,7 +2,7 @@
   {
     "gameTitle": "rps",
     "summary": "A simple game of rock, paper, scissors against the computer!",
-    "imgSrc": "",
+    "imgSrc": "../../../images/rps/unsplash_rock.jpg",
     "imgAlt": "",
     "tech": ""
   }

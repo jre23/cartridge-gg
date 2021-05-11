@@ -1,3 +1,4 @@
+// index for Games components
 import React, { useState, useEffect } from "react";
 import Jumbotron from "../../components/Jumbotron";
 import GamesContainer from "./GamesContainer";
