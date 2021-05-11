@@ -1,4 +1,9 @@
 import React, { useState, useEffect } from "react";
+import rockImage from "../../images/rps/unsplash_morShani_rock.jpg";
+import paperImage from "../../images/rps/unsplash_kellySikkema_paper.jpg";
+import scissorsImage from "../../images/rps/unsplash_antonDarius_scissors.jpg";
+import Jumbotron from "../../components/Jumbotron";
+import GameImage from "../../components/GameImage";
 
 const RockPaperScissors = () => {
   // const [userChoice, setUserChoice] = useState({
@@ -7,11 +12,19 @@ const RockPaperScissors = () => {
   //   scissorsBool: false,
   // });
 
-  const rockPaperScissors = () => {
+  const styles = {
+    images: {
+      height: "300px",
+      width: "300px",
+    },
+    backgroundColor: {
+      background: "red",
+    },
+  };
+
+  const rockPaperScissors = (event) => {
     // Get user choice of rock paper or scissors
-    const userChoice = prompt(
-      "Let's play rock, paper, scissors! Enter 'rock' 'paper' or 'scissors' to play!"
-    );
+    let userChoice = event.target.getAttribute("data-value");
     // test if userChoice is valid
     if (
       (userChoice !== "rock" &&
@@ -44,15 +57,57 @@ const RockPaperScissors = () => {
     }
   };
 
-  useEffect(() => {
-    setTimeout(() => {
-      rockPaperScissors();
-    }, 100);
-  }, []);
+  // useEffect(() => {
+  //   setTimeout(() => {
+  //     rockPaperScissors();
+  //   }, 100);
+  // }, []);
 
   return (
     <>
-      <h1>RPS</h1>
+      <Jumbotron>
+        <h1>Rock Paper Scissors</h1>
+        <br />
+        <h2>Choose an image!</h2>
+      </Jumbotron>
+
+      <div className="container px-3">
+        <div className="row align-items-center gx-3">
+          <div className="col-12 col-md-4">
+            <div className="p-2 mb-3 text-center">
+              <img
+                src={rockImage}
+                className="img-fluid"
+                style={styles.images}
+                data-value="rock"
+                onClick={rockPaperScissors}
+              ></img>
+            </div>
+          </div>
+          <div className="col-12 col-md-4">
+            <div className="p-2 mb-3 text-center">
+              <img
+                src={paperImage}
+                className="img-fluid"
+                style={styles.images}
+                data-value="paper"
+                onClick={rockPaperScissors}
+              ></img>
+            </div>
+          </div>
+          <div className="col-12 col-md-4">
+            <div className="p-2 mb-3 text-center">
+              <img
+                src={scissorsImage}
+                className="img-fluid"
+                style={styles.images}
+                data-value="scissors"
+                onClick={rockPaperScissors}
+              ></img>
+            </div>
+          </div>
+        </div>
+      </div>
     </>
   );
 };
