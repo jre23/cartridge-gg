@@ -2,8 +2,9 @@ import React, { useState, useEffect } from "react";
 import rockImage from "../../images/rps/unsplash_morShani_rock.jpg";
 import paperImage from "../../images/rps/unsplash_kellySikkema_paper.jpg";
 import scissorsImage from "../../images/rps/unsplash_antonDarius_scissors.jpg";
+import NavLinks from "../../components/NavLinks";
 import Jumbotron from "../../components/Jumbotron";
-import GameImage from "../../components/GameImage";
+import Footer from "../../components/Footer";
 
 const RockPaperScissors = () => {
   // const [userChoice, setUserChoice] = useState({
