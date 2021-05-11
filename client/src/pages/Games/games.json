@@ -1,9 +1,26 @@
 [
   {
-    "gameTitle": "rps",
+    "gameTitle": "Rock Paper Scissors!",
     "summary": "A simple game of rock, paper, scissors against the computer!",
-    "imgSrc": "../../../images/rps/unsplash_rock.jpg",
-    "imgAlt": "",
+    "imgSrc": "../../../images/rps/unsplash_fadilahImani_rps.jpg",
+    "imgAlt": "Rock Paper Scissors",
+    "url": "/rps",
+    "tech": ""
+  },
+  {
+    "gameTitle": "Rock Paper Scissors!",
+    "summary": "A simple game of rock, paper, scissors against the computer!",
+    "imgSrc": "../../../images/rps/unsplash_fadilahImani_rps.jpg",
+    "imgAlt": "Rock Paper Scissors",
+    "url": "/rps",
+    "tech": ""
+  },
+  {
+    "gameTitle": "Rock Paper Scissors!",
+    "summary": "A simple game of rock, paper, scissors against the computer!",
+    "imgSrc": "../../../images/rps/unsplash_fadilahImani_rps.jpg",
+    "imgAlt": "Rock Paper Scissors",
+    "url": "/rps",
     "tech": ""
   }
 ]

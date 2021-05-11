@@ -2,7 +2,6 @@
 import React, { useState, useEffect } from "react";
 import Jumbotron from "../../components/Jumbotron";
 import GamesContainer from "./GamesContainer";
-import games from "./games.json";
 
 const Games = () => {
   const [clickState, setClickState] = useState({
@@ -20,7 +19,7 @@ const Games = () => {
         <br />
         <h2>Clicking on an image will provide further details on the game!</h2>
       </Jumbotron>
-      <GamesContainer games={games}></GamesContainer>
+      <GamesContainer></GamesContainer>
     </>
   );
 };

@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
+import games from "./games.json";
+import GameImage from "../../components/GameImage";
 
 const GamesContainer = (props) => {
   console.log(props, "props");
@@ -22,21 +24,9 @@ const GamesContainer = (props) => {
     <>
       <div className="container px-3">
         <div className="row align-items-center gx-3">
-          <div className="col-12 col-md-6">
-            <div className="p-2 mb-3" style={styles.backgroundColor1}>
-              <Link to="/rps">RPS</Link>
-            </div>
-          </div>
-          <div className="col-12 col-md-6">
-            <div className="p-2 mb-3" style={styles.backgroundColor2}>
-              <Link to="/rps">RPS</Link>
-            </div>
-          </div>
-          <div className="col-12 col-md-6">
-            <div className="p-2 mb-3" style={styles.backgroundColor3}>
-              <Link to="/rps">RPS</Link>
-            </div>
-          </div>
+          {games.map((item, index) => (
+            <GameImage key={index} {...item} index={index} />
+          ))}
         </div>
       </div>
     </>
