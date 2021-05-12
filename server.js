@@ -2,7 +2,7 @@
 const express = require("express");
 const path = require("path");
 const mongoose = require("mongoose");
-// const routes = require("./routes");
+const routes = require("./routes");
 // initialize express app
 const app = express();
 // configure the PORT
@@ -15,7 +15,7 @@ if (process.env.NODE_ENV === "production") {
   app.use(express.static("client/build"));
 }
 // API routes
-// app.use(routes);
+app.use(routes);
 // send every other request to the React app
 app.get("*", (req, res) => {
   res.sendFile(path.join(__dirname, "./client/build/index.html"));
