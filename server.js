@@ -21,15 +21,11 @@ app.get("*", (req, res) => {
   res.sendFile(path.join(__dirname, "./client/build/index.html"));
 });
 // set up connection to mongodb using mongoose
-mongoose.connect(
-  process.env.MONGODB_URI ||
-    "mongodb://localhost/{insertProjectDatabaseNameHere}",
-  {
-    useUnifiedTopology: true,
-    useNewUrlParser: true,
-    useCreateIndex: true,
-  }
-);
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/cartridgegg", {
+  useUnifiedTopology: true,
+  useNewUrlParser: true,
+  useCreateIndex: true,
+});
 // start the server
 app.listen(PORT, () => {
   console.log(`🌎 ==> API server now on port ${PORT}!`);

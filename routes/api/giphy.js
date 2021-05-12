@@ -1,7 +1,7 @@
 const router = require("express").Router();
-const apiController = require("../../controllers/apiController");
+const apiController = require("../../contollers/apiController");
 
-// matches with "/api/giphy"
-router.route("/").get(apiController.getGiphy);
+// matches with "/api/giphy/:query"
+router.route("/:query").get(apiController.getGiphy);
 
 module.exports = router;
