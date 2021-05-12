@@ -1,21 +1,21 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
 const GameImage = (props) => {
   console.log(props, "props");
 
-  const styles = {
-    backgroundColor: {
-      background: "red",
-      textAlign: "center",
-    },
-  };
-
   return (
     <>
       <div className="col-12 col-md-6">
-        <div className="p-2 mb-3" style={styles.backgroundColor}>
-          <Link to={props.url}>{props.gameTitle}</Link>
+        <div className="p-2 mb-3">
+          <img
+            data-bs-toggle="modal"
+            data-bs-target="#projectModal"
+            className="img-fluid"
+            alt={props.imgAlt}
+            src={props.imgSrc}
+            data-game={props.dataGame}
+            data-value={props.index}
+          />
         </div>
       </div>
     </>

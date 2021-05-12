@@ -1,16 +1,16 @@
 // index for Games components
-import React, { useState, useEffect } from "react";
+import React from "react";
 import Jumbotron from "../../components/Jumbotron";
 import GamesContainer from "./GamesContainer";
 
 const Games = () => {
-  const [clickState, setClickState] = useState({
-    gameTitle: "",
-    summary: "",
-    imgSrc: "",
-    imgAlt: "",
-    tech: "",
-  });
+  // const [clickState, setClickState] = useState({
+  //   gameTitle: "",
+  //   summary: "",
+  //   imgSrc: "",
+  //   imgAlt: "",
+  //   tech: "",
+  // });
 
   return (
     <>

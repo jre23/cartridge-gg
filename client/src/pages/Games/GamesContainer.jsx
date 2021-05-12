@@ -1,25 +1,8 @@
-import React, { useState } from "react";
-import { Link, useLocation } from "react-router-dom";
+import React from "react";
 import games from "./games.json";
 import GameImage from "../../components/GameImage";
 
-const GamesContainer = (props) => {
-  console.log(props, "props");
-
-  const styles = {
-    backgroundColor1: {
-      background: "red",
-      textAlign: "center",
-    },
-    backgroundColor2: {
-      background: "blue",
-      textAlign: "center",
-    },
-    backgroundColor3: {
-      background: "green",
-      textAlign: "center",
-    },
-  };
+const GamesContainer = () => {
   return (
     <>
       <div className="container px-3">

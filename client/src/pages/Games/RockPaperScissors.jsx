@@ -1,10 +1,8 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import rockImage from "../../images/rps/unsplash_morShani_rock.jpg";
 import paperImage from "../../images/rps/unsplash_kellySikkema_paper.jpg";
 import scissorsImage from "../../images/rps/unsplash_antonDarius_scissors.jpg";
-import NavLinks from "../../components/NavLinks";
 import Jumbotron from "../../components/Jumbotron";
-import Footer from "../../components/Footer";
 
 const RockPaperScissors = () => {
   // const [userChoice, setUserChoice] = useState({
@@ -78,6 +76,7 @@ const RockPaperScissors = () => {
             <div className="p-2 mb-3 text-center">
               <img
                 src={rockImage}
+                alt="Pile of rocks"
                 className="img-fluid"
                 style={styles.images}
                 data-value="rock"
@@ -89,6 +88,7 @@ const RockPaperScissors = () => {
             <div className="p-2 mb-3 text-center">
               <img
                 src={paperImage}
+                alt="Piece of paper"
                 className="img-fluid"
                 style={styles.images}
                 data-value="paper"
@@ -100,6 +100,7 @@ const RockPaperScissors = () => {
             <div className="p-2 mb-3 text-center">
               <img
                 src={scissorsImage}
+                alt="Pair of scissors"
                 className="img-fluid"
                 style={styles.images}
                 data-value="scissors"
