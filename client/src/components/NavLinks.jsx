@@ -33,7 +33,7 @@ const NavLinks = () => {
               ? "navbar navbar-expand-lg navbar-dark nav-about"
               : location.pathname === "/rps"
               ? "navbar navbar-expand-lg navbar-dark nav-about"
-              : "navbar navbar-expand-lg navbar-dark"
+              : "navbar navbar-expand-lg navbar-dark nav-index"
           }
         >
           <Link to="/" className="navbar-brand">
@@ -50,7 +50,6 @@ const NavLinks = () => {
           >
             <span className="navbar-toggler-icon"></span>
           </button>
-
           <div
             className="collapse navbar-collapse justify-content-end"
             id="navbarToggle"

@@ -1,20 +1,25 @@
+// index for Home component
 import React from "react";
-
-const styles = {
-  bg: {
-    background: "#ffffff",
-  },
-  text: {
-    color: "red",
-  },
-};
+import { Link } from "react-router-dom";
+import "../../styles/Home.css";
+import Jumbotron from "../../components/Jumbotron";
 
 const Home = () => {
   return (
     <>
-      <div style={styles.bg}>
-        <h1 style={styles.text}>Home</h1>
-      </div>
+      <Jumbotron classComp={"jumboHome"}>
+        <h1>Cartridge GG</h1>
+        <h5>
+          A hub for games! This is a site for simple games I've created. Take a
+          look at the Games page to play! Check the About page for my contact
+          info, general inquiries, and the motivation behind this page!
+        </h5>
+        <Link to="/games">
+          <button class="btn btn-outline-light mt-3" type="button">
+            GAMES
+          </button>
+        </Link>
+      </Jumbotron>
     </>
   );
 };

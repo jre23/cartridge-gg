@@ -1,11 +1,11 @@
 /* navbar background colors */
 .nav-index {
-  background-color: #2d283e;
+  background-color: #0b0c10;
   opacity: 0.95;
 }
 
 .nav-games {
-  background-color: #5d5c61;
+  background-color: #0b0c10;
   opacity: 0.95;
 }
 
@@ -22,6 +22,10 @@
 .navbar-brand {
   color: white;
   opacity: 0.95;
+}
+
+.navMain {
+  font-size: 40px;
 }
 
 /* unvisited link */
