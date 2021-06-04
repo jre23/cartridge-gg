@@ -1,10 +1,12 @@
 import React from "react";
-import rockImage from "../../images/rps/unsplash_morShani_rock.jpg";
-import paperImage from "../../images/rps/unsplash_kellySikkema_paper.jpg";
-import scissorsImage from "../../images/rps/unsplash_antonDarius_scissors.jpg";
-import Jumbotron from "../../components/Jumbotron";
+import rockImage from "../../../images/rps/unsplash_morShani_rock.jpg";
+import paperImage from "../../../images/rps/unsplash_kellySikkema_paper.jpg";
+import scissorsImage from "../../../images/rps/unsplash_antonDarius_scissors.jpg";
+import Jumbotron from "../../../components/Jumbotron";
+import { Link, useLocation } from "react-router-dom";
 
 const RockPaperScissors = () => {
+  const location = useLocation();
   // const [userChoice, setUserChoice] = useState({
   //   rockBool: false,
   //   paperBool: false,
@@ -61,16 +63,27 @@ const RockPaperScissors = () => {
 
   return (
     <>
+      {/* // <!-- Background image  --> */}
+      <div
+        className={"bg-gaming"}
+        role="img"
+        aria-label="Background image"
+      ></div>
       <Jumbotron>
         <h1>Rock Paper Scissors</h1>
         <br />
         <h2>Choose an image!</h2>
+        <Link to="/games">
+          <button className="btn btn-outline-light mt-3" type="button">
+            GAMES
+          </button>
+        </Link>
       </Jumbotron>
       <main>
         <div className="container px-3">
           <div className="row align-items-center gx-3">
-            <div className="col-12 col-md-4">
-              <div className="p-2 mb-3 text-center">
+            <div className="col p-3">
+              <div className="col card card-cover h-100 bg-light">
                 <img
                   src={rockImage}
                   alt="Pile of rocks"
@@ -81,8 +94,8 @@ const RockPaperScissors = () => {
                 ></img>
               </div>
             </div>
-            <div className="col-12 col-md-4">
-              <div className="p-2 mb-3 text-center">
+            <div className="col p-3">
+              <div className="col card card-cover h-100 bg-light">
                 <img
                   src={paperImage}
                   alt="Piece of paper"
@@ -93,8 +106,8 @@ const RockPaperScissors = () => {
                 ></img>
               </div>
             </div>
-            <div className="col-12 col-md-4">
-              <div className="p-2 mb-3 text-center">
+            <div className="col p-3">
+              <div className="col card card-cover h-100 bg-light">
                 <img
                   src={scissorsImage}
                   alt="Pair of scissors"

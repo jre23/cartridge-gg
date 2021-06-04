@@ -15,7 +15,7 @@ const Home = () => {
           info, general inquiries, and the motivation behind this page!
         </h5>
         <Link to="/games">
-          <button class="btn btn-outline-light mt-3" type="button">
+          <button className="btn btn-outline-light mt-3" type="button">
             GAMES
           </button>
         </Link>

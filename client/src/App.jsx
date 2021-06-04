@@ -5,7 +5,7 @@ import Home from "./pages/Home";
 import Games from "./pages/Games";
 import About from "./pages/About";
 import Footer from "./components/Footer";
-import RockPaperScissors from "./pages/Games/RockPaperScissors";
+import RockPaperScissors from "./pages/Games/RPS";
 
 const App = () => {
   return (

@@ -23,8 +23,13 @@ const Games = () => {
           Clicking on an image will provide further details on the game!
         </h5>
         <Link to="/about">
-          <button class="btn btn-outline-light mt-3" type="button">
+          <button className="btn btn-outline-light mt-3" type="button">
             ABOUT
+          </button>
+        </Link>
+        <Link to="/rps">
+          <button className="btn btn-outline-light mt-3" type="button">
+            RPS
           </button>
         </Link>
       </Jumbotron>
