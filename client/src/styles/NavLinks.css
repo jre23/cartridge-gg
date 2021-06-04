@@ -9,8 +9,8 @@
   opacity: 0.95;
 }
 
-.nav-about {
-  background-color: #44318d;
+.nav-gaming {
+  background-color: #25274d;
   opacity: 0.95;
 }
 
@@ -57,22 +57,23 @@ a:active {
 }
 
 /* background images for each page */
-.bg-index {
+/* .bg-index {
   background-image: url("./images/matrix-background.png");
 }
 
-.bg-about {
+.bg-games {
   background-image: url("./images/coding-background.jpg");
   opacity: 0.8;
-}
+} */
 
-.bg-games {
-  background-image: url("./images/cloud-background.png");
+.bg-gaming {
+  background-image: url("./images/unsplash_alexeySavchenko_ps4controller.jpg");
+  opacity: 0.4;
 }
 
 .bg-index,
-.bg-about,
-.bg-games {
+.bg-games,
+.bg-gaming {
   position: fixed;
   top: 0;
   left: 0;

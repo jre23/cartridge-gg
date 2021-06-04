@@ -14,9 +14,7 @@ const NavLinks = () => {
             ? "bg-index"
             : location.pathname === "/games"
             ? "bg-games"
-            : location.pathname === "/about"
-            ? "bg-about"
-            : "bg-index"
+            : "bg-gaming"
         }
         role="img"
         aria-label="Background image"
@@ -30,10 +28,8 @@ const NavLinks = () => {
               : location.pathname === "/games"
               ? "navbar navbar-expand-lg navbar-dark nav-games"
               : location.pathname === "/about"
-              ? "navbar navbar-expand-lg navbar-dark nav-about"
-              : location.pathname === "/rps"
-              ? "navbar navbar-expand-lg navbar-dark nav-about"
-              : "navbar navbar-expand-lg navbar-dark nav-index"
+              ? "navbar navbar-expand-lg navbar-dark nav-gaming"
+              : "navbar navbar-expand-lg navbar-dark nav-gaming"
           }
         >
           <Link to="/" className="navbar-brand">
@@ -72,7 +68,7 @@ const NavLinks = () => {
                   to="/about"
                   className={
                     location.pathname === "/about"
-                      ? "nav-link active nav-about"
+                      ? "nav-link active nav-gaming"
                       : "nav-link"
                   }
                 >

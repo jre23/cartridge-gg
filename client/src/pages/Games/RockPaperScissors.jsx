@@ -16,9 +16,6 @@ const RockPaperScissors = () => {
       height: "300px",
       width: "300px",
     },
-    backgroundColor: {
-      background: "red",
-    },
   };
 
   const rockPaperScissors = (event) => {
@@ -69,47 +66,48 @@ const RockPaperScissors = () => {
         <br />
         <h2>Choose an image!</h2>
       </Jumbotron>
-
-      <div className="container px-3">
-        <div className="row align-items-center gx-3">
-          <div className="col-12 col-md-4">
-            <div className="p-2 mb-3 text-center">
-              <img
-                src={rockImage}
-                alt="Pile of rocks"
-                className="img-fluid"
-                style={styles.images}
-                data-value="rock"
-                onClick={rockPaperScissors}
-              ></img>
+      <main>
+        <div className="container px-3">
+          <div className="row align-items-center gx-3">
+            <div className="col-12 col-md-4">
+              <div className="p-2 mb-3 text-center">
+                <img
+                  src={rockImage}
+                  alt="Pile of rocks"
+                  className="img-fluid"
+                  style={styles.images}
+                  data-value="rock"
+                  onClick={rockPaperScissors}
+                ></img>
+              </div>
             </div>
-          </div>
-          <div className="col-12 col-md-4">
-            <div className="p-2 mb-3 text-center">
-              <img
-                src={paperImage}
-                alt="Piece of paper"
-                className="img-fluid"
-                style={styles.images}
-                data-value="paper"
-                onClick={rockPaperScissors}
-              ></img>
+            <div className="col-12 col-md-4">
+              <div className="p-2 mb-3 text-center">
+                <img
+                  src={paperImage}
+                  alt="Piece of paper"
+                  className="img-fluid"
+                  style={styles.images}
+                  data-value="paper"
+                  onClick={rockPaperScissors}
+                ></img>
+              </div>
             </div>
-          </div>
-          <div className="col-12 col-md-4">
-            <div className="p-2 mb-3 text-center">
-              <img
-                src={scissorsImage}
-                alt="Pair of scissors"
-                className="img-fluid"
-                style={styles.images}
-                data-value="scissors"
-                onClick={rockPaperScissors}
-              ></img>
+            <div className="col-12 col-md-4">
+              <div className="p-2 mb-3 text-center">
+                <img
+                  src={scissorsImage}
+                  alt="Pair of scissors"
+                  className="img-fluid"
+                  style={styles.images}
+                  data-value="scissors"
+                  onClick={rockPaperScissors}
+                ></img>
+              </div>
             </div>
           </div>
         </div>
-      </div>
+      </main>
     </>
   );
 };
