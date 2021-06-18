@@ -1,7 +1,7 @@
 /* navbar background colors */
 /* .nav-index {
   background-color: #0b0c10;
-}
+} */
 
 .nav-games {
   background-color: #0b0c10;
@@ -11,13 +11,7 @@
 .nav-gaming {
   background-color: #25274d;
   opacity: 0.95;
-} */
-
-/* navbar brand, submit button, and contact info font color */
-/* .navbar-brand {
-  color: white;
-  opacity: 0.95;
-} */
+}
 
 .navbar-custom {
   font-size: 2rem;
