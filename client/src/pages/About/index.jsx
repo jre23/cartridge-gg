@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import ContactForm from "./ContactForm";
 import API from "../../utils/API";
-import "../../styles/About.css";
+// import "../../styles/About.css";
 
 const About = () => {
   const [gifState, setGifState] = useState({

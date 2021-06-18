@@ -1,7 +1,7 @@
 // index for Games components
 import React from "react";
 import { Link } from "react-router-dom";
-import "../../styles/Games.css";
+// import "../../styles/Games.css";
 import Jumbotron from "../../components/Jumbotron";
 import GamesContainer from "./GamesContainer";
 import gameImg1 from "../../images/rps/unsplash_fadilahImani_rps.jpg";

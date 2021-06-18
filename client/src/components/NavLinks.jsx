@@ -7,7 +7,7 @@ const NavLinks = () => {
 
   return (
     <>
-      {/* // <!-- Background image  --> */}
+      {/* <!-- Background image  --> */}
       {/* <div
         className={
           location.pathname === "/"
@@ -24,7 +24,7 @@ const NavLinks = () => {
         <nav
           className={
             location.pathname === "/"
-              ? "navbar navbar-expand-lg navbar-dark nav-index"
+              ? "navbar navbar-expand-lg navbar-dark bg-dark"
               : location.pathname === "/games"
               ? "navbar navbar-expand-lg navbar-dark nav-games"
               : location.pathname === "/about"
@@ -32,11 +32,8 @@ const NavLinks = () => {
               : "navbar navbar-expand-lg navbar-dark nav-gaming"
           }
         >
-          <Link to="/" className="navbar-brand">
-            Home
-          </Link>
           <button
-            className="navbar-toggler"
+            className="navbar-toggler mx-4"
             type="button"
             data-toggle="collapse"
             data-target="#navbarToggle"
@@ -47,10 +44,22 @@ const NavLinks = () => {
             <span className="navbar-toggler-icon"></span>
           </button>
           <div
-            className="collapse navbar-collapse justify-content-end"
+            className="collapse navbar-collapse navbar-custom mx-4 justify-content-center"
             id="navbarToggle"
           >
             <ul className="navbar-nav ml-auto mt-2 mt-lg-0">
+              <li className="nav-item">
+                <Link
+                  to="/"
+                  className={
+                    location.pathname === "/"
+                      ? "nav-link active nav-index"
+                      : "nav-link"
+                  }
+                >
+                  Home
+                </Link>
+              </li>
               <li className="nav-item">
                 <Link
                   to="/games"

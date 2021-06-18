@@ -15,12 +15,13 @@ const RockPaperScissors = () => {
 
   const styles = {
     images: {
-      height: "300px",
-      width: "300px",
+      height: "auto",
+      maxWidth: "100%",
     },
   };
 
   const rockPaperScissors = (event) => {
+    event.preventDefault();
     // Get user choice of rock paper or scissors
     let userChoice = event.target.getAttribute("data-value");
     // test if userChoice is valid
@@ -63,12 +64,6 @@ const RockPaperScissors = () => {
 
   return (
     <>
-      {/* // <!-- Background image  --> */}
-      <div
-        className={"bg-gaming"}
-        role="img"
-        aria-label="Background image"
-      ></div>
       <Jumbotron>
         <h1>Rock Paper Scissors</h1>
         <br />
@@ -95,7 +90,7 @@ const RockPaperScissors = () => {
               </div>
             </div>
             <div className="col p-3">
-              <div className="col card card-cover h-100 bg-light">
+              <div className="col card card-cover bg-light">
                 <img
                   src={paperImage}
                   alt="Piece of paper"

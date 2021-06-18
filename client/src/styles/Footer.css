@@ -1,20 +1,13 @@
 /* footer, footer paragraph, and general inquiries container */
 footer,
 footer p {
-  background-color: #c1c8e4;
+  background-color: rgb(33, 37, 41);
+  color: white;
 }
 
 footer {
-  border-top: solid;
-  border-color: #314455;
-  border-width: 6px;
   position: fixed;
   left: 0;
   bottom: 0;
   width: 100%;
-  opacity: 0.95;
-}
-
-footer p {
-  color: rgb(108, 117, 125);
 }
