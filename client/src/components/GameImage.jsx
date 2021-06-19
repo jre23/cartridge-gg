@@ -6,7 +6,7 @@ const GameImage = (props) => {
 
   return (
     <>
-      <div className="card shadow-sm">
+      <div className="card shadow-sm bg-transparent">
         <img
           data-bs-toggle="modal"
           data-bs-target="#projectModal"

@@ -33,7 +33,7 @@ const About = () => {
       <main>
         <div className="container col-xxl-8 px-4 py-5">
           <div className="row flex-lg-row align-items-center g-5 py-5 justify-content-center">
-            <div class="col-lg-6 text-center text-lg-start">
+            <div className="col-lg-6 text-center text-lg-start">
               <h1 className="display-4 fw-bold lh-1 mb-3">About Joel</h1>
               <p className="col-lg-10 fs-4">
                 Hi, I'm Joel! I'm from Seattle and I built this web app so I can
@@ -46,6 +46,7 @@ const About = () => {
               <div className="mt-3 d-grid gap-2 d-md-flex justify-content-lg-start justify-content-center">
                 <a
                   href="https://www.linkedin.com/in/joelestrada23"
+                  rel="noopener noreferrer"
                   target="_blank"
                   type="button"
                   className="btn btn-outline-primary btn-lg px-4 me-md-2"
@@ -54,7 +55,7 @@ const About = () => {
                 </a>
                 <a
                   href="https://jre23.github.io/react-portfolio/"
-                  rel="noreferrer"
+                  rel="noopener noreferrer"
                   target="_blank"
                   type="button"
                   className="btn btn-outline-info btn-lg px-4"

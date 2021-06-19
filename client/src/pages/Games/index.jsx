@@ -4,7 +4,10 @@ import { Link } from "react-router-dom";
 import "../../styles/Games.css";
 import Jumbotron from "../../components/Jumbotron";
 import GamesContainer from "./GamesContainer";
-// import gameImg1 from "../../images/rps/unsplash_fadilahImani_rps.jpg";
+import gameImg1 from "../../images/rps/unsplash_fadilahImani_rps.jpg";
+import gameImg2 from "../../images/scratch/scratch_buttonClick.png";
+import gameImg3 from "../../images/scratch/scratch_catNmouse.png";
+import gameImg4 from "../../images/scratch/scratch_cheesyPuffs.png";
 
 const Games = () => {
   // const [clickState, setClickState] = useState({
@@ -14,6 +17,7 @@ const Games = () => {
   //   imgAlt: "",
   //   tech: "",
   // });
+  console.log(gameImg1[0] + gameImg2[0] + gameImg3[0] + gameImg4[0]);
 
   return (
     <>

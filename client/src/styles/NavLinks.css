@@ -12,8 +12,8 @@
 }
 
 .nav-gaming {
-  background-color: #25274d;
-  opacity: 0.95;
+  background-color: #1a1a1d;
+  opacity: 0.8;
 }
 
 .navbar-custom {
@@ -56,12 +56,12 @@
 
 .bg-games {
   background-image: url("./images/unsplash_mikaBaumeister_superMario.jpg");
-  opacity: 0.23;
+  opacity: 0.2;
 }
 
 .bg-gaming {
   background-image: url("./images/unsplash_alexeySavchenko_ps4controller.jpg");
-  opacity: 0.4;
+  opacity: 0.6;
 }
 
 .bg-about,

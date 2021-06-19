@@ -3,10 +3,9 @@ import rockImage from "../../../images/rps/unsplash_morShani_rock.jpg";
 import paperImage from "../../../images/rps/unsplash_kellySikkema_paper.jpg";
 import scissorsImage from "../../../images/rps/unsplash_antonDarius_scissors.jpg";
 import Jumbotron from "../../../components/Jumbotron";
-import { Link, useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const RockPaperScissors = () => {
-  const location = useLocation();
   // const [userChoice, setUserChoice] = useState({
   //   rockBool: false,
   //   paperBool: false,
@@ -67,7 +66,7 @@ const RockPaperScissors = () => {
       <Jumbotron>
         <h1>Rock Paper Scissors</h1>
         <br />
-        <h2>Choose an image!</h2>
+        <h3>Choose an image!</h3>
         <Link to="/games">
           <button className="btn btn-outline-light mt-3" type="button">
             GAMES

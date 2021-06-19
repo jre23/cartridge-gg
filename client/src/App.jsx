@@ -6,6 +6,9 @@ import Games from "./pages/Games";
 import About from "./pages/About";
 import Footer from "./components/Footer";
 import RockPaperScissors from "./pages/Games/RPS";
+import CatNMouse from "./pages/Games/CatNMouse";
+import CheesyPuffs from "./pages/Games/CheesyPuffs";
+import ButtonClick from "./pages/Games/ButtonClick";
 
 const App = () => {
   return (
@@ -23,6 +26,15 @@ const App = () => {
         </Route>
         <Route exact path="/rps">
           <RockPaperScissors />
+        </Route>
+        <Route exact path="/cnm">
+          <CatNMouse />
+        </Route>
+        <Route exact path="/cheesypuffs">
+          <CheesyPuffs />
+        </Route>
+        <Route exact path="/buttonclick">
+          <ButtonClick />
         </Route>
         <Route>
           <Home />
