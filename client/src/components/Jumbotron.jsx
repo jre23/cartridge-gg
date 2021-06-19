@@ -1,6 +1,5 @@
-// import dependencies
 import React from "react";
-// define Jumbotron component
+
 const Jumbotron = (props) => {
   return (
     <>
@@ -23,5 +22,5 @@ const Jumbotron = (props) => {
     </>
   );
 };
-// export Jumbotron component
+
 export default Jumbotron;

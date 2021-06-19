@@ -51,7 +51,7 @@
 /* background images for each page */
 .bg-about {
   background-image: url("./images/unsplash_cjtagupa_balabac.jpg");
-  opacity: 0.4;
+  opacity: 0.23;
 }
 
 .bg-games {
@@ -61,7 +61,7 @@
 
 .bg-gaming {
   background-image: url("./images/unsplash_alexeySavchenko_ps4controller.jpg");
-  opacity: 0.6;
+  opacity: 0.57;
 }
 
 .bg-about,
