@@ -53,85 +53,45 @@ const About = () => {
 
   return (
     <>
-      {/*  
-      <main className="container my-5 pt-4 col-12 col-sm-11 col-md-10">
-
-        <div className="row">
-          <section className="col-12 col-sm-6 text-white pt-4 pl-4 pr-4 contact-border-background text-center">
-            <h1 className="contact-header">Contact Info</h1>
-            <hr />
-            <div className="contact-info">
-              <h5 className="mb-1">Joel Estrada</h5>Seattle, WA
-              <br /> Email:{" "}
-              <a
-                href=" mailto:jre.estrada@gmail.com?subject=Joel's Portfolio Contact
-                    Email"
-              >
-                jre.estrada@gmail.com
-              </a>
-              <br />
-              Phone: (253) 249-3170
-              <br />
-            </div>
-            <div>
+      <main>
+        <div className="container col-xxl-8 px-4 py-5">
+          <div className="row flex-lg-row-reverse align-items-center g-5 py-5">
+            <div className="col-10 col-sm-8 col-lg-6">
               <img
                 className="pt-3 px-auto img-fluid img-size"
                 alt="english bulldog or thank you gif"
                 src={gifState.image}
               ></img>
             </div>
-            <br />
-          </section>
-          <ContactForm handleSubmit={handleSubmit} />
-        </div>
-      </main>*/}
-      <main>
-        <div className="container col-xl-10 col-xxl-8 px-4 py-5">
-          <div className="row align-items-center g-lg-5 py-5">
-            <div className="col-lg-7 text-center text-lg-start">
-              <h1 className="display-4 fw-bold lh-1 mb-3">
-                Vertically centered hero sign-up form
-              </h1>
+            <div class="col-lg-6">
+              <h1 className="display-4 fw-bold lh-1 mb-3">About Joel</h1>
               <p className="col-lg-10 fs-4">
-                Below is an example form built entirely with Bootstrap’s form
-                controls. Each required form group has a validation state that
-                can be triggered by attempting to submit the form without
-                completing it.
+                Hi, I'm Joel! I'm from Seattle and I built this web app so I can
+                keep practicing my coding skills while having a little fun! I
+                love eating, running, lifting weights, playing video games,
+                english bulldogs, and coding! I hope you were able to enjoy some
+                of the games I've built! Feel free to connect with me! Thanks
+                for stopping by!
               </p>
             </div>
-            <div className="col-md-10 mx-auto col-lg-5">
-              <form className="p-4 p-md-5 border rounded-3 bg-light">
-                <div className="form-floating mb-3">
-                  <input
-                    type="email"
-                    className="form-control"
-                    id="floatingInput"
-                    placeholder="name@example.com"
-                  />
-                  <label for="floatingInput">Email address</label>
-                </div>
-                <div className="form-floating mb-3">
-                  <input
-                    type="password"
-                    className="form-control"
-                    id="floatingPassword"
-                    placeholder="Password"
-                  />
-                  <label for="floatingPassword">Password</label>
-                </div>
-                <div className="checkbox mb-3">
-                  <label>
-                    <input type="checkbox" value="remember-me" /> Remember me
-                  </label>
-                </div>
-                <button className="w-100 btn btn-lg btn-primary" type="submit">
-                  Sign up
-                </button>
-                <hr className="my-4" />
-                <small className="text-muted">
-                  By clicking Sign up, you agree to the terms of use.
-                </small>
-              </form>
+            <div className="mt-3 d-grid gap-2 d-md-flex justify-content-md-start">
+              <a
+                href="https://www.linkedin.com/in/joelestrada23"
+                target="_blank"
+                type="button"
+                className="btn btn-outline-primary btn-lg px-4 me-md-2"
+              >
+                LinkedIn
+              </a>
+              <a
+                href="https://jre23.github.io/react-portfolio/"
+                rel="noreferrer"
+                target="_blank"
+                type="button"
+                className="btn btn-outline-info btn-lg px-4"
+              >
+                Portfolio
+              </a>
             </div>
           </div>
         </div>
