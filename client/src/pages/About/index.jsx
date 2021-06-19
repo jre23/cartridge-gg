@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import ContactForm from "./ContactForm";
 import API from "../../utils/API";
 // import "../../styles/About.css";
 
@@ -29,41 +28,12 @@ const About = () => {
     giphyAPI();
   }, [gifState.gif]);
 
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    let dataValue = event.target.getAttribute("data-target");
-    setGifState({ ...gifState, gif: dataValue });
-    // used formspree to handle form submissions. reference: https://formspree.io/forms/xrgodlyl/integration
-    const form = event.target;
-    const data = new FormData(form);
-    const xhr = new XMLHttpRequest();
-    xhr.open(form.method, form.action);
-    xhr.setRequestHeader("Accept", "application/json");
-    xhr.onreadystatechange = () => {
-      if (xhr.readyState !== XMLHttpRequest.DONE) return;
-      if (xhr.status === 200) {
-        form.reset();
-        alert("Thanks for your inquiry!");
-      } else {
-        alert("Oops! There was an error.");
-      }
-    };
-    xhr.send(data);
-  };
-
   return (
     <>
       <main>
         <div className="container col-xxl-8 px-4 py-5">
-          <div className="row flex-lg-row-reverse align-items-center g-5 py-5">
-            <div className="col-10 col-sm-8 col-lg-6">
-              <img
-                className="pt-3 px-auto img-fluid img-size"
-                alt="english bulldog or thank you gif"
-                src={gifState.image}
-              ></img>
-            </div>
-            <div class="col-lg-6">
+          <div className="row flex-lg-row align-items-center g-5 py-5 justify-content-center">
+            <div class="col-lg-6 text-center text-lg-start">
               <h1 className="display-4 fw-bold lh-1 mb-3">About Joel</h1>
               <p className="col-lg-10 fs-4">
                 Hi, I'm Joel! I'm from Seattle and I built this web app so I can
@@ -73,25 +43,32 @@ const About = () => {
                 of the games I've built! Feel free to connect with me! Thanks
                 for stopping by!
               </p>
+              <div className="mt-3 d-grid gap-2 d-md-flex justify-content-lg-start justify-content-center">
+                <a
+                  href="https://www.linkedin.com/in/joelestrada23"
+                  target="_blank"
+                  type="button"
+                  className="btn btn-outline-primary btn-lg px-4 me-md-2"
+                >
+                  LinkedIn
+                </a>
+                <a
+                  href="https://jre23.github.io/react-portfolio/"
+                  rel="noreferrer"
+                  target="_blank"
+                  type="button"
+                  className="btn btn-outline-info btn-lg px-4"
+                >
+                  Portfolio
+                </a>
+              </div>
             </div>
-            <div className="mt-3 d-grid gap-2 d-md-flex justify-content-md-start">
-              <a
-                href="https://www.linkedin.com/in/joelestrada23"
-                target="_blank"
-                type="button"
-                className="btn btn-outline-primary btn-lg px-4 me-md-2"
-              >
-                LinkedIn
-              </a>
-              <a
-                href="https://jre23.github.io/react-portfolio/"
-                rel="noreferrer"
-                target="_blank"
-                type="button"
-                className="btn btn-outline-info btn-lg px-4"
-              >
-                Portfolio
-              </a>
+            <div className="col-10 col-sm-8 col-lg-6 text-center">
+              <img
+                className="pt-3 px-auto img-fluid img-size"
+                alt="english bulldog or thank you gif"
+                src={gifState.image}
+              ></img>
             </div>
           </div>
         </div>

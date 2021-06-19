@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import "../../styles/Games.css";
 import Jumbotron from "../../components/Jumbotron";
 import GamesContainer from "./GamesContainer";
-import gameImg1 from "../../images/rps/unsplash_fadilahImani_rps.jpg";
+// import gameImg1 from "../../images/rps/unsplash_fadilahImani_rps.jpg";
 
 const Games = () => {
   // const [clickState, setClickState] = useState({
@@ -26,11 +26,6 @@ const Games = () => {
           <Link to="/about">
             <button className="btn btn-outline-dark mt-3 mx-2" type="button">
               ABOUT
-            </button>
-          </Link>
-          <Link to="/rps">
-            <button className="btn btn-outline-dark mt-3 mx-2" type="button">
-              RPS
             </button>
           </Link>
         </Jumbotron>
