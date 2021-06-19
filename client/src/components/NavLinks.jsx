@@ -14,6 +14,8 @@ const NavLinks = () => {
             ? "bg-index"
             : location.pathname === "/games"
             ? "bg-games"
+            : location.pathname === "/about"
+            ? "bg-about"
             : "bg-gaming"
         }
         role="img"

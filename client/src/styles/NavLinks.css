@@ -49,10 +49,14 @@
 } */
 
 /* background images for each page */
+/* .bg-about {
+  background-image: url("./images/unsplash_cjtagupa_balabac.jpg");
+  opacity: 0.5;
+} */
 
 .bg-games {
   background-image: url("./images/unsplash_mikaBaumeister_superMario.jpg");
-  opacity: 0.3;
+  opacity: 0.23;
 }
 
 .bg-gaming {
@@ -60,6 +64,7 @@
   opacity: 0.4;
 }
 
+.bg-about,
 .bg-games,
 .bg-gaming {
   position: fixed;
