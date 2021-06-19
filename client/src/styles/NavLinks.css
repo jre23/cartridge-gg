@@ -1,10 +1,13 @@
 /* navbar background colors */
 /* .nav-index {
-  background-color: #0b0c10;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
 } */
 
 .nav-games {
-  background-color: #0b0c10;
+  background-color: #78c3df;
   opacity: 0.95;
 }
 
@@ -46,11 +49,8 @@
 } */
 
 /* background images for each page */
-/* .bg-index {
-  background-image: url("./images/matrix-background.png");
-} */
 
-/* .bg-games {
+.bg-games {
   background-image: url("./images/unsplash_mikaBaumeister_superMario.jpg");
   opacity: 0.3;
 }
@@ -60,7 +60,6 @@
   opacity: 0.4;
 }
 
-.bg-index,
 .bg-games,
 .bg-gaming {
   position: fixed;
@@ -68,4 +67,4 @@
   left: 0;
   height: 100%;
   width: 100%;
-} */
+}

@@ -8,7 +8,7 @@ const NavLinks = () => {
   return (
     <>
       {/* <!-- Background image  --> */}
-      {/* <div
+      <div
         className={
           location.pathname === "/"
             ? "bg-index"
@@ -18,7 +18,7 @@ const NavLinks = () => {
         }
         role="img"
         aria-label="Background image"
-      ></div> */}
+      ></div>
 
       <header>
         <nav
