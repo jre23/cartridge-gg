@@ -22,7 +22,7 @@ The name Cartridge GG pays homage to the cartridge games I grew up playing. The 
 
 [GitHub Repo](https://github.com/jre23/cartridge-gg)
 
-<!-- [Heroku Deployment]() -->
+[Heroku Deployment](https://cartridge-gg.herokuapp.com/)
 
 ## Screenshots
 
