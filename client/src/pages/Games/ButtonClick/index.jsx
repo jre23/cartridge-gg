@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Jumbotron from "../../../components/Jumbotron";
 import games from "../games.json";
+import "../../../styles/EmbedIFrame.css";
 
 const ButtonClick = (props) => {
   return (
@@ -16,19 +17,13 @@ const ButtonClick = (props) => {
           </button>
         </Link>
       </Jumbotron>
-      <br />
-      <br />
-      <main>
-        <div className="text-center mt-5">
+      <main className="iFrame mx-auto">
+        <div className="mb-5 ratio ratio-4x3">
           <iframe
             title="Button Click Scratch Game"
             src="https://scratch.mit.edu/projects/416816965/embed"
             allowtransparency="true"
-            width="485"
-            height="402"
-            frameborder="0"
             scrolling="no"
-            allowfullscreen
           ></iframe>
         </div>
       </main>

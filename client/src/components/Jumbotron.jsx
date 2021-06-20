@@ -3,20 +3,9 @@ import React from "react";
 const Jumbotron = (props) => {
   return (
     <>
-      <div className="container">
-        <div className="col justify-content-center">
-          <div
-            style={{
-              height: 300,
-              clear: "both",
-              paddingTop: 72,
-              textAlign: "center",
-              opacity: "0.88",
-            }}
-            className={props.classComp}
-          >
-            {props.children}
-          </div>
+      <div className="p-4 mb-2 text-center">
+        <div className="container-fluid py-3">
+          <div className={props.classComp}>{props.children}</div>
         </div>
       </div>
     </>

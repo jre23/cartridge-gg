@@ -1,9 +1,9 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Cartridge GG",
+  "name": "Cartridge GG React Web App",
   "icons": [
     {
-      "src": "favicon.ico",
+      "src": "favicon-icons8-nintendo-64-48.ico",
       "sizes": "192x192",
       "type": "image/png"
     }
