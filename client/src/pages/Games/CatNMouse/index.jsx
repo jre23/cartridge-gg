@@ -23,7 +23,6 @@ const CatNMouse = (props) => {
             title="Cat and Mouse Scratch Game"
             src="https://scratch.mit.edu/projects/417439739/embed"
             allowtransparency="true"
-            frameborder="0"
             scrolling="no"
           ></iframe>
         </div>

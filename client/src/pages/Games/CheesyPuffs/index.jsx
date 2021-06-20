@@ -23,7 +23,6 @@ const CheesyPuffs = (props) => {
             title="Cheesy Puffs Scratch Game"
             src="https://scratch.mit.edu/projects/417041813/embed"
             allowtransparency="true"
-            frameborder="0"
             scrolling="no"
           ></iframe>
         </div>

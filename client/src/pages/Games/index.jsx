@@ -11,11 +11,7 @@ import gameImg4 from "../../images/scratch/scratch_cheesyPuffs.png";
 
 const Games = () => {
   // for console errors of variables not being used. these images are imported above for them to show up. otherwise will be blank
-  // console.log(gameImg1[0] + gameImg2[0] + gameImg3[0] + gameImg4[0]);
-  console.log(gameImg1, "1");
-  console.log(gameImg2, "2");
-  console.log(gameImg3, "3");
-  console.log(gameImg4, "4");
+  console.log(gameImg1[0] + gameImg2[0] + gameImg3[0] + gameImg4[0]);
 
   return (
     <>
