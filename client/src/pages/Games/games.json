@@ -2,7 +2,7 @@
   {
     "gameTitle": "Rock Paper Scissors!",
     "summary": "A simple game of rock, paper, scissors against the computer!",
-    "imgSrc": "cartridge-gg/static/media/unsplash_fadilahImani_rps.a3de79ef.jpg",
+    "imgSrc": "/static/media/unsplash_fadilahImani_rps.a3de79ef.jpg",
     "imgAlt": "Rock Paper Scissors",
     "url": "/rps",
     "tech": "",
@@ -11,7 +11,7 @@
   {
     "gameTitle": "Cat and Mouse!",
     "summary": "A Game of Cat and Mouse! Users can move the cat left and right with the arrow keys. Users can press the space bar to shoot a projectile. Mice fall from the sky at random locations. If a mouse reaches the bottom, the player loses a life. If the player shoots a mouse, the mouse is deleted, and the player gets a point. Every 5 points added to the score, the mouse fall speed increases. Once a player reaches 0 life, they lose.",
-    "imgSrc": "cartridge-gg/static/media/scratch_catNmouse.b8e8573c.png",
+    "imgSrc": "/static/media/scratch_catNmouse.b8e8573c.png",
     "imgAlt": "Cat and Mouse Scratch Game",
     "url": "/cnm",
     "tech": ""
@@ -19,7 +19,7 @@
   {
     "gameTitle": "Cheesy Puffs",
     "summary": "Get the Cheesy Puffs! Move the cat up, down, left, and right with the arrow keys. Try to catch the cheesy puffs! Each catch is +1! Avoid the crab and the bat because they're -1! A score of 10 wins the game! When you win you get to relax at the beach!",
-    "imgSrc": "cartridge-gg/static/media/scratch_cheesyPuffs.d2d0a553.png",
+    "imgSrc": "/static/media/scratch_cheesyPuffs.d2d0a553.png",
     "imgAlt": "Cheesy Puffs Scratch Game",
     "url": "/cheesypuffs",
     "tech": ""
