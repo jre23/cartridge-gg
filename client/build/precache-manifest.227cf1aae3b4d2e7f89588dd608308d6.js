@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "cbb9f6cf1da40a929ef8f1c0ad801b69",
+    "revision": "563b410d8eb67f68733a2bab93066f3c",
     "url": "/cartridge-gg/index.html"
   },
   {
-    "revision": "267f37e3b49080877741",
+    "revision": "9386b90b776cb4195799",
     "url": "/cartridge-gg/static/css/2.38e2dc45.chunk.css"
   },
   {
-    "revision": "71a480b9cd9e607f6c6e",
-    "url": "/cartridge-gg/static/css/main.81a0e183.chunk.css"
+    "revision": "0eef3baaaac9a51b3c95",
+    "url": "/cartridge-gg/static/css/main.687edad5.chunk.css"
   },
   {
-    "revision": "267f37e3b49080877741",
-    "url": "/cartridge-gg/static/js/2.68b90c85.chunk.js"
+    "revision": "9386b90b776cb4195799",
+    "url": "/cartridge-gg/static/js/2.5aa72dbe.chunk.js"
   },
   {
     "revision": "9b318b6fb13190fe82c0677e9264b3c7",
-    "url": "/cartridge-gg/static/js/2.68b90c85.chunk.js.LICENSE.txt"
+    "url": "/cartridge-gg/static/js/2.5aa72dbe.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "71a480b9cd9e607f6c6e",
-    "url": "/cartridge-gg/static/js/main.4b2e6637.chunk.js"
+    "revision": "0eef3baaaac9a51b3c95",
+    "url": "/cartridge-gg/static/js/main.a27c3c0c.chunk.js"
   },
   {
     "revision": "bc3988d4363548e468e6",
