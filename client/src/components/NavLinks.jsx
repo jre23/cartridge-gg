@@ -31,7 +31,7 @@ const NavLinks = () => {
               ? "navbar navbar-expand-lg navbar-dark nav-games"
               : location.pathname === "/about"
               ? "navbar navbar-expand-lg navbar-dark nav-gaming"
-              : "navbar navbar-expand-lg navbar-dark nav-gaming"
+              : "navbar navbar-expand-lg navbar-dark bg-dark"
           }
         >
           <button

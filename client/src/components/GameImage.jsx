@@ -2,8 +2,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const GameImage = (props) => {
-  // console.log(props, "props");
-
   return (
     <>
       <div className="card shadow-sm bg-transparent">
