@@ -6,8 +6,6 @@ const GameImage = (props) => {
     <>
       <div className="card shadow-sm bg-transparent">
         <img
-          data-bs-toggle="modal"
-          data-bs-target="#projectModal"
           className="img-fluid"
           alt={props.imgAlt}
           src={props.imgSrc}
