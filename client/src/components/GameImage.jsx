@@ -26,7 +26,7 @@ const GameImage = (props) => {
                 </button>
               </Link>
             </div>
-            <small className="text-muted">JRE</small>
+            <small className="text-muted">{props.notes}</small>
           </div>
         </div>
       </div>

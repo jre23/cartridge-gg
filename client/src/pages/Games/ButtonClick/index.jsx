@@ -10,7 +10,9 @@ const ButtonClick = (props) => {
       <Jumbotron>
         <h1>Button Click Game!</h1>
         <br />
-        <h3>Click the green flag to play! {games[3].summary}</h3>
+        <h4>
+          Click the green flag to play! {games[3].summary} {games[3].notes}
+        </h4>
         <Link to="/games">
           <button className="btn btn-outline-light mt-3" type="button">
             GAMES
@@ -21,7 +23,7 @@ const ButtonClick = (props) => {
         <div className="mb-5 ratio ratio-4x3">
           <iframe
             title="Button Click Scratch Game"
-            src="https://scratch.mit.edu/projects/416816965/embed"
+            src={games[3].embedSrc}
             allowtransparency="true"
             scrolling="no"
           ></iframe>

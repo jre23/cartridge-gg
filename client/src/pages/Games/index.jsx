@@ -16,7 +16,7 @@ const Games = () => {
   return (
     <>
       <main>
-        <Jumbotron classNameComp={"jumboGame"}>
+        <Jumbotron>
           <h1>Welcome! Choose a game below to play!</h1>
           <h5 className="hFive">
             There are descriptions below each game image to help describe the

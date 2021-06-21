@@ -10,7 +10,9 @@ const CatNMouse = (props) => {
       <Jumbotron>
         <h1>Cat N Mouse!</h1>
         <br />
-        <h3>Click the green flag to play! {games[1].summary}</h3>
+        <h3>
+          Click the green flag to play! {games[1].summary} {games[1].notes}
+        </h3>
         <Link to="/games">
           <button className="btn btn-outline-light mt-3" type="button">
             GAMES
@@ -21,7 +23,7 @@ const CatNMouse = (props) => {
         <div className="mb-5 ratio ratio-4x3">
           <iframe
             title="Cat and Mouse Scratch Game"
-            src="https://scratch.mit.edu/projects/417439739/embed"
+            src={games[1].embedSrc}
             allowtransparency="true"
             scrolling="no"
           ></iframe>
